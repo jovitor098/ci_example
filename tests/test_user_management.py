@@ -54,10 +54,10 @@ class TestUserManagement(unittest.TestCase):
     def test_list_are_sorted(self):
         create_user("Charlie", "charlie@domain.com",
                     "StrongP@ssw0rd", "1990-01-01")
-        create_user("Alice", "alice@domain.com",
+        create_user("Ana Paula", "ana@domain.com",
                     "StrongP@ssw0rd", "1990-01-01")
         users = list_users()
-        self.assertEqual(users[0]["name"], "Alice")
+        self.assertEqual(users[0]["name"], "Ana Paula")
         self.assertEqual(users[1]["name"], "Charlie")
 
 if __name__ == "__main__":
